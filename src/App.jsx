@@ -1,9 +1,10 @@
-import React from 'react'
-
+import Navbar from "#components/Navbar.jsx"
 const App = () => {
   return (
-    <div>Welcome to my portfolio</div>
-  )
-}
+   <main>
+      <Navbar />
+    </main>
+  );
+};
 
 export default App
