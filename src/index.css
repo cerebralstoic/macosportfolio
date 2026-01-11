@@ -139,6 +139,7 @@ body {
       }
     }
 
+    min-height: 70vh;
     .blog {
       @apply bg-white p-10 max-w-3xl mx-auto;
 

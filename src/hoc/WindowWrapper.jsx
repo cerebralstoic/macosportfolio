@@ -24,17 +24,33 @@ const WindowWrapper = (Component, windowKey) => {
 
         }, [isOpen]);
 
+   
         useGSAP(() => {
             const el = ref.current;
-            if (!el) return () => {};
+            if (!el || isMaximized) return;
+
+            const header = el.querySelector('#window-header');
+            if (!header) return;
+
+            const [instance] = Draggable.create(el, {
+                trigger: header,
+                onPress: () => focusWindow(windowKey),
+                allowEventDefault: true,
+                cancel: 'input, textarea, button, select'
+            });
+
+        return () => instance.kill();   
+        }, [isMaximized]);
+
+        useGSAP(() => {
+            const el = ref.current;
+            if (!el) return;
+        
             if (isMaximized) {
-    gsap.set(el, { x: 0, y: 0 });
+                gsap.set(el, { x: 0, y: 0 });
             }
-            const [instance] =  Draggable.create(el, {onPress: () => focusWindow(windowKey)});
-            return () => {
-                instance.kill();
-            };
-        },[isMaximized]);
+        }, [isMaximized]);
+
 
         useLayoutEffect(() => {
             const el = ref.current;
@@ -47,7 +63,7 @@ const WindowWrapper = (Component, windowKey) => {
           id={windowKey}
           ref={ref}
           style={{ zIndex }}
-          className={`absolute ${isMaximized ? 'window-maximized' : ''}`}
+          className={`absolute  ${isMaximized ? 'window-maximized' : ''}`}
         >
             <Component {...props} />
         </section>
