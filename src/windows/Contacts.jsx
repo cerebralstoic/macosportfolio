@@ -12,8 +12,6 @@ const Contacts = () => {
         </h2>
         <div className="w-12" />
       </div>
-
-      {/* ✅ CONTENT WRAPPER */}
       <div className="h-[calc(100%-56px)] p-6 space-y-6 bg-white overflow-auto">
         <div className="flex flex-col items-center text-center space-y-3">
           <img
