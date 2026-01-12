@@ -54,7 +54,7 @@ const Safari = () => {
         <div className="flex-1 flex-center gap-3">
           <ShieldHalf className="icon" />
           <div className="search flex">
-            <Search className="icon" />
+            <Search className="icon" onClick={handleNavigate}/>
             <input
               type="text"
               placeholder="Search or enter website name"
