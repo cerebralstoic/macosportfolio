@@ -1,4 +1,7 @@
 import Terminal from "#windows/Terminal";
 import Safari from "./Safari";
 import Resume from "./Resume";
-export { Terminal, Safari, Resume };
+import Finder from "./Finder";     
+import Text from "./Text"; 
+import ImageViewer from "./ImageViewer";                        
+export { Terminal, Safari, Resume, Finder, Text, ImageViewer };
