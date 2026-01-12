@@ -65,7 +65,6 @@ const Dock = () => {
         const window = windows[app.id];
         if (window.isOpen) closeWindow(app.id);
         else openWindow(app.id);
-        console.log(windows);
     };
 
     return (
