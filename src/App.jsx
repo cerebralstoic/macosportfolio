@@ -2,6 +2,7 @@ import { Dock, Home, Navbar, Welcome } from "#components";
 import { Finder, Resume, Safari, Terminal, Text, ImageViewer, Contacts, Gallary } from "#windows";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
+import { Analytics } from "@vercel/analytics/react"
 
 gsap.registerPlugin(Draggable);
 const App = () => {
@@ -19,6 +20,8 @@ const App = () => {
       <Contacts/>
       <Home/>
       <Gallary/>
+      
+      <Analytics/>
     </main>
   );
 };
