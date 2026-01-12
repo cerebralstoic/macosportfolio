@@ -1,16 +1,60 @@
-# React + Vite
+# 🖥️ macOS-Style Portfolio Desktop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully interactive **macOS-inspired desktop portfolio** built with **React**, featuring draggable windows, window controls, a dock, Finder-like navigation, Safari-style browser, image viewer, PDF resume viewer, and dynamic state management.
 
-Currently, two official plugins are available:
+This project mimics real desktop behavior while remaining a modern, performant web application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🪟 **Window System**
+  - Open, close, minimize, maximize windows
+  - Proper z-index focus management
+  - Smooth animations with GSAP
+  - True fullscreen handling
 
-## Expanding the ESLint configuration
+- 🧭 **Finder-Style Navigation**
+  - Folder & file hierarchy
+  - Dynamic file opening based on file type
+  - Image, text, PDF, and external links supported
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🌐 **Safari-Like Browser**
+  - Wikipedia search support
+  - Embedded browsing where allowed
+  - External site fallback for restricted domains
+
+- 🖼️ **Photo Gallery**
+  - Grid-based gallery layout
+  - Click-to-open image viewer
+  - Scrollable content area
+  - Fullscreen-safe layout
+
+- 📄 **Resume Viewer**
+  - Multi-page PDF rendering
+  - Scrollable content
+  - Dynamic scaling in fullscreen
+
+- 🎛️ **Dock**
+  - Hover animations
+  - App launching behavior
+  - macOS-style interaction
+
+- 🎥 **Video / Image Wallpaper Support**
+  - Desktop background image
+  - Optional video background support
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **GSAP + Draggable**
+- **Zustand** (state management)
+- **React-PDF**
+- **Lucide Icons**
+
+---
+
