@@ -49,6 +49,18 @@ const dockApps = [
     canOpen: true,
   },
   {
+    id: "applemusic",
+    name : "Apple Music",
+    icon: "applemusic.png",
+    canOpen: true,
+  },
+  {
+    id: "vscode",
+    name: "VsCode", // was "vscode"
+    icon: "vscode.png",
+    canOpen: true,
+  },
+  {
     id: "photos",
     name: "Gallery", // was "Photos"
     icon: "photos.png",
@@ -65,12 +77,6 @@ const dockApps = [
     name: "Skills", // was "Terminal"
     icon: "terminal.png",
     canOpen: true,
-  },
-  {
-    id: "trash",
-    name: "Archive", // was "Trash"
-    icon: "trash.png",
-    canOpen: false,
   },
 ];
 
@@ -493,6 +499,8 @@ const WINDOW_CONFIG = {
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  vscode: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
+  applemusic: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };
