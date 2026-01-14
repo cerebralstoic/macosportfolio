@@ -469,3 +469,71 @@ body {
     }
   }
 }
+.boot-root {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 9999;
+  cursor: pointer;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui;
+}
+
+.boot-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boot-time {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+
+.boot-date {
+  font-size: 34px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.boot-clock {
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.boot-user {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.boot-user img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.boot-name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.boot-hint {
+  font-size: 14px;
+  opacity: 0.7;
+}
