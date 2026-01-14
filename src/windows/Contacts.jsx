@@ -15,7 +15,7 @@ const Contacts = () => {
       <div className="h-[calc(100%-56px)] p-6 space-y-6 bg-white overflow-auto">
         <div className="flex flex-col items-center text-center space-y-3">
           <img
-            src="/images/me.png"
+            src="/images/me.webp"
             alt="Vineet"
             className="w-24 h-24 rounded-full object-cover shadow-md"
           />
