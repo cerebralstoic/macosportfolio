@@ -8,25 +8,26 @@ import { useEffect, useState } from "react";
 
 gsap.registerPlugin(Draggable);
 const App = () => {
-  const [showBoot, setShowBoot] = useState(false);
+  const [showBoot, setShowBoot] = useState(true)
 
   useEffect(() => {
-    const hasBooted = sessionStorage.getItem("booted");
-    if(!hasBooted){
-      setShowBoot(true);
+    const hasBooted = sessionStorage.getItem("booted")
+    if (hasBooted) {
+      setShowBoot(false)
     }
-  },[]);
+  }, [])
 
-  const handleBootFinsih = () =>{
-    sessionStorage.setItem("booted","true");
-    setShowBoot(false);
+  const handleBootFinish = () => {
+    sessionStorage.setItem("booted", "true")
+    setShowBoot(false)
   }
 
-  if(showBoot){
-    return <Boot onFinish={handleBootFinsih} />
-  }
   return (
-   <main>
+    <>
+   <main  style={{
+          visibility: showBoot ? "hidden" : "visible"
+        }}
+    >
       <Navbar />
       <Welcome />
       <Dock/>
@@ -44,6 +45,8 @@ const App = () => {
       
       <Analytics/>
     </main>
+     {showBoot && <Boot onFinish={handleBootFinish} />}
+    </>
   );
 };
 

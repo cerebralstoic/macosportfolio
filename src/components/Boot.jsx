@@ -11,6 +11,11 @@ const Boot = ({ onFinish }) => {
     return () => clearInterval(interval)
   }, [])
 
+   useEffect(() => {
+    const img = new Image()
+    img.src = "/images/me.png"
+  }, [])
+
   return (
     <div className="boot-root" onClick={onFinish}>
       <video
@@ -30,7 +35,7 @@ const Boot = ({ onFinish }) => {
       </div>
 
       <div className="boot-user">
-        <img src="/images/me.png" alt="Vineet" />
+        <img src="/images/me.webp" alt="Vineet" />
         <div className="boot-name">Vineet Rawat</div>
         <div className="boot-hint">Click to Login</div>
       </div>

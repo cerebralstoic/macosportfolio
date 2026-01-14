@@ -422,7 +422,7 @@ const ABOUT_LOCATION = {
       fileType: "txt",
       position: "top-20 left-5",
       subtitle: "Engineering Secure Applications with Code and Curiosity",
-      image: "/images/me.png",
+      image: "/images/me.webp",
       description: [
         "Hi, I’m Vineet Rawat a Computer Science undergraduate with a strong interest in building secure, scalable, and impactful software  systems.",
         "I work across mobile, web, and backend development, with hands-on experience in Flutter, Python, Flask, C++ and modern web technologies.",
