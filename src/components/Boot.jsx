@@ -13,7 +13,7 @@ const Boot = ({ onFinish }) => {
 
    useEffect(() => {
     const img = new Image()
-    img.src = "/images/me.png"
+    img.src = "/images/me.webp"
   }, [])
 
   return (

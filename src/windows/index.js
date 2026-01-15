@@ -7,5 +7,6 @@ import Contacts from "./Contacts";
 import ImageViewer from "./ImageViewer";   
 import Gallary from "./Gallary";     
 import Vscode from "./Vscode";             
-import AppleMusic from "./AppleMusic";                   
-export { Terminal, Safari, Resume, Finder, Text, ImageViewer, Contacts, Gallary, Vscode, AppleMusic};
+import AppleMusic from "./AppleMusic";       
+import NotFound from "./NotFound";            
+export { Terminal, Safari, Resume, Finder, Text, ImageViewer, Contacts, Gallary, Vscode, AppleMusic, NotFound};

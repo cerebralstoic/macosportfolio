@@ -501,6 +501,7 @@ const WINDOW_CONFIG = {
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   vscode: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
   applemusic: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
+  notfound :{ isOpen: false, zIndex: INITIAL_Z_INDEX, data: null},
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

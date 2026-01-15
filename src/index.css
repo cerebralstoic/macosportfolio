@@ -537,3 +537,10 @@ body {
   font-size: 14px;
   opacity: 0.7;
 }
+#notfound {
+  @apply absolute bg-white shadow-2xl rounded-xl overflow-hidden;
+  width: 70vw;
+  height: 70vh;
+  top: 15vh;
+  left: 15vw;
+}

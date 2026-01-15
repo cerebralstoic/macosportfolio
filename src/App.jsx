@@ -1,5 +1,5 @@
 import { Dock, Home, Navbar, Welcome,Boot } from "#components";
-import { Finder, Resume, Safari, Terminal, Text, ImageViewer, Contacts, Gallary, Vscode, AppleMusic } from "#windows";
+import { Finder, Resume, Safari, Terminal, Text, ImageViewer, Contacts, Gallary, Vscode, AppleMusic, NotFound } from "#windows";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { Analytics } from "@vercel/analytics/react"
@@ -42,6 +42,7 @@ const App = () => {
       <Gallary/>
       <Vscode/>
       <AppleMusic/>
+      <NotFound/>
       
       <Analytics/>
     </main>
