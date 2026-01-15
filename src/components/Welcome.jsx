@@ -17,6 +17,7 @@ const renderText =(text,className,baseWeight =400) =>{
 }
 
 const setupTextHover = (container,type) =>{
+
     if(!container) return () => {};
     const letters = container.querySelectorAll('span');
     const {min,max,default:base} =FONT_WEIGHTS[type];
@@ -49,6 +50,7 @@ const setupTextHover = (container,type) =>{
     };
 }
 const Welcome = () => {
+    const isDesktop = window.innerWidth > 640;
     const titleRef = React.useRef(null);
     const subtitleRef= React.useRef(null);
 
@@ -62,11 +64,14 @@ const Welcome = () => {
         }
     },[]);
   return (
-    <section id="welcome"><p ref={subtitleRef}>
+    <section id="welcome">
+    { isDesktop && ( 
+        <>
+    <p ref={subtitleRef}>
         {renderText("Hey, I'm Vineet! Welcome to my", "text-3xl font-georama", 100)}
     </p>
     <h1 ref={titleRef}>{renderText("portfolio", "text-9xl italic font-georama")}</h1>
-    <div className='small-screen'><p>This portfolio is designned for desktop/tablet screens only.</p></div>
+    <div className='small-screen'><p>This portfolio is designned for desktop/tablet screens only.</p></div> </>) }
     </section>
   )
 }

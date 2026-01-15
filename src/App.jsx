@@ -4,10 +4,12 @@ import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { Analytics } from "@vercel/analytics/react"
 import { useEffect, useState } from "react";
+import useMobileGuard from "./MobileGuard";
 
 
 gsap.registerPlugin(Draggable);
 const App = () => {
+  useMobileGuard();
   const [showBoot, setShowBoot] = useState(true)
 
   useEffect(() => {

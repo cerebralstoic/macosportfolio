@@ -4,6 +4,8 @@ import { AlertCircle } from "lucide-react"
 import useWindowStore from "#store/window"
 
 const NotFound = () => {
+  const isMobile = window.innerWidth < 640;
+
   const { closeWindow } = useWindowStore()
 
   return (
@@ -11,7 +13,7 @@ const NotFound = () => {
       <div id="window-header" className="flex items-center">
         <WindowControls target="notfound" />
         <h2 className="flex-1 text-center font-semibold text-sm">
-          Not Found
+          {isMobile ? "Ohh Noooo" : "Not Found"}
         </h2>
         <div className="w-12" />
       </div>
@@ -20,15 +22,19 @@ const NotFound = () => {
         <AlertCircle className="w-12 h-12 text-red-400" strokeWidth={1.5} />
 
         <h1 className="text-5xl font-semibold">
-          Oops! You’ve reached a
+          {isMobile ? "Oops! You need a Desktop": "Oops! You’ve reached" }
         </h1>
-
-        <h2 className="text-6xl bold  font-light">
+        {isMobile ? "" 
+        : <h2 className="text-6xl bold  font-light">
           404 page
         </h2>
+        }
+        
 
         <p className="text-gray-500 max-w-md">
-          The page you're looking for seems to have wandered off into the digital void.
+          {isMobile 
+          ? "This macOS-style portfolio is designed for laptops and tablets. Please visit on a larger screen."
+          : "The page you're looking for seems to have wandered off into the digital void."}
         </p>
 
         <button
