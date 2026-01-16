@@ -58,3 +58,57 @@ This project mimics real desktop behavior while remaining a modern, performant w
 
 ---
 
+## 🚀 Getting Started
+
+Follow the steps below to run the project locally.
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/cerebralstoic/macosportfolio.git
+cd macosportfolio
+```
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
+### 3️⃣ Start the Development Server
+```bash
+npm run dev
+```
+## ⚙️ Customization Guide
+This project is config-driven, allowing you to customize most content without modifying core logic.
+
+### 🔧 Central Configuration File
+All major customizations are handled from:
+```
+src/constants/index.js
+```
+Use this file to update:
+- Contacts Link
+- Docks App
+- NavLinks
+- WindowConfigs
+- BlogPost
+- Resume
+- Techstack
+- Project
+
+  Just change the value in this index.js file
+---
+### 🎬 Boot Video & Wallpaper Customization
+Boot Video
+To change the macOS-style boot animation, replace the video file located at:
+```
+public/video/
+```
+Wallpaper
+```
+public/images/
+```
+ Ensure the filename matches the reference used in the application.
+Somes images are directly used in the components itself so modify it accordingly or replace the images with the same name.
+
+
+
+
+
