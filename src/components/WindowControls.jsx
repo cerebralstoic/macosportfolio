@@ -2,7 +2,7 @@ import useWindowStore from "#store/window"
 
 
 const WindowControls = ({target}) => {
-    const disableMaximize = target === "applemusic" || "notfound";
+    const disableMaximize = target === "applemusic" || target=== "notfound";
     const {closeWindow, minimizeWindow, toggleMaximizeWindow} = useWindowStore();
 
       return (<div id="window-controls">
