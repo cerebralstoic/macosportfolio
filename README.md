@@ -5,6 +5,11 @@ A fully interactive **macOS-inspired desktop portfolio** built with **React**, f
 This project mimics real desktop behavior while remaining a modern, performant web application.
 
 ---
+## 🔗 Live Preview
+
+Experience the portfolio live here:
+
+👉 **https://vineetrawat.me**
 
 ## ✨ Features
 
