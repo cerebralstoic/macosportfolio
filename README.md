@@ -10,6 +10,7 @@ This project mimics real desktop behavior while remaining a modern, performant w
 Experience the portfolio live here:
 
 👉 **https://vineetrawat.me**
+⭐ Found this interesting? A GitHub star would mean a lot!
 
 ## ✨ Features
 
