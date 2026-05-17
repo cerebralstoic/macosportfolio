@@ -12,7 +12,7 @@ const Vscode = () => {
 
       <iframe
         title="Vscode"
-        src="https://github1s.com/cerebralstoic/cerebralstoic/blob/main/README.md"
+        src="https://github1s.com/cerebralstoic/macosportfolio"
         className="flex-1 w-full bg-[#202020]"
         allow="clipboard-read; clipboard-write"
         />
